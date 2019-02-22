@@ -13,7 +13,7 @@ defmodule Trash.Factory do
     run(last + 100)
   end
 
-  def create_user(user_number) do
+  defp create_user(user_number) do
     now = NaiveDateTime.utc_now() |> NaiveDateTime.truncate(:second)
     [
       username: "username#{user_number}",
