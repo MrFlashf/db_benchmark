@@ -2,28 +2,21 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
-config :postgres, Postgres.Repo,
-  database: "db_test",
-  # username: "krzychu",
-  # password: "",
-  hostname: "localhost",
-  log: false
-
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
 # file won't be loaded nor affect the parent project. For this reason,
 # if you want to provide default values for your application for
-# third-party users, it should be done in your "mix.exs" file.
+# 3rd-party users, it should be done in your "mix.exs" file.
 
 # You can configure your application as:
 #
-#     config :postgres, key: :value
+#     config :srongo, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:postgres, :key)
+#     Application.get_env(:srongo, :key)
 #
-# You can also configure a third-party app:
+# You can also configure a 3rd-party app:
 #
 #     config :logger, level: :info
 #
