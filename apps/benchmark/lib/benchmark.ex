@@ -13,7 +13,7 @@ defmodule Benchmark do
     end)
   end
 
-  defp measure(function) do
+  def measure(function) do
     function
     |> :timer.tc
     |> elem(0)
